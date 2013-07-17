@@ -173,13 +173,18 @@ section	 {
 		margin-bottom: 10px;
 	}
 	.ideaAuthor {
-		width: 400px;
+		width: 215px;
 		height: 25px;
 		float: left;
 		background-color: #eee;
 	}
+		.ideaAuthor img {
+			float: right;
+			width: 25px;
+			height: 25px;
+		}
 	.ideaComments {
-		width: 200px;
+		min-width: 200px;
 		height: 25px;
 		float: right;
 		text-align: right;
