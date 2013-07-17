@@ -285,11 +285,11 @@ header {
 	-webkit-border-radius: 0px 0px 8px 8px;
     border-radius: 0px 0px 8px 8px;
 }
-.search, .filter, .add {
+.search, .filter, .add, nav, section {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-.newIdea input[type='submit'] {
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+.newIdea input[type='submit'], .idea {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
