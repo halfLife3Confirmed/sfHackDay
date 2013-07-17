@@ -80,11 +80,17 @@ nav {
 		margin-right: 10px;
 	}
 	.filter {
-		width: 80px;
+		width: 170px;
 		height: 25px;
 		background-color: #bbb;
 		float: left;
 	}
+		.filter select {
+			width: 100px;
+			height: inherit;
+			background: transparent;
+			float: right;
+		}
 	.search {
 		width: 350px;
 		height: 25px;
@@ -198,8 +204,12 @@ header h2 {
 }
 .filter p {
 	font-size: 12pt;
-	padding: 4px 0 0 0;
-	text-align: center;;
+	padding: 5px 0 0 5px;
+	text-align: center;
+	float: left;
+}
+select {
+	font-size: 11pt;
 }
 .search p {
 	font-size: 12pt;
@@ -230,7 +240,7 @@ header {
 	-webkit-border-radius: 0px 0px 8px 8px;
     border-radius: 0px 0px 8px 8px;
 }
-.search {
+.search, .filter, .add {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }

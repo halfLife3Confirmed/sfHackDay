@@ -29,7 +29,14 @@
 </header>
 <nav>
 	<div class='add'><p>+</p></div>
-	<div class='filter'><p>comments</p></div>
+	<div class='filter'>
+		<p>Filter by:</p>
+		<select>
+			<option value="recent">recent</option>
+			<option value="comments">comments</option>
+			<option value="top">top</option>
+</select>
+	</div>
 	<div class='search'><p>Search bar</p></div>
 </nav>
 <section>
@@ -51,6 +58,9 @@
 $(document).ready(function() {
 	$('.upvote').click(function() {
 		$(this).toggleClass('upvoted');
+	});
+	$('filter').click(function() {
+
 	});
 });
 </script>
