@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hack Day 2013 | Ideation Collab</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/libs/ember-1.0.0-rc.6.js"></script>
+<script src="/libs/handlebars-1.0.0-rc.4.js"></script>
+<script src="app.js"></script>
+</head>
+<body class='main'>
+<div class='banner'>
+	<div class='bannerWrap'>
+		<img src='icon.png' />
+		<h1>State Farm Ideation Manager</h1>
+		<h2>Hello, Peter!</h2>
+	</div>
+</div>
+<header>
+	<div class='topic'><h1>Create a new ideation</h1></div>
+	<div class='topicDesc'><h2>General guidelines about submissions and how to do them. Pug you probably haven't heard of them swag gentrify food truck, nihil raw denim YOLO ethical meh Portland ullamco enim fap direct trade. Banksy authentic kogi Williamsburg organic sriracha salvia, selfies reprehenderit vero forage. Qui Vice nulla blue bottle selfies salvia pour-over veniam. Retro put a bird on it lomo food truck kitsch nihil. Before they sold out quis vinyl raw denim nostrud next level, delectus sartorial twee dolore dreamcatcher.</h2></div>
+</header>
+<section>
+<div class='newIdea'>
+	<form>
+		<input type='text' placeholder='Title'>
+	</form>
+</div>
+</section>
+<script>
+$(document).ready(function() {
+	$('.upvote').click(function() {
+		$(this).toggleClass('upvoted');
+	});
+	$('filter').click(function() {
+
+	});
+});
+</script>
+</body>
+</html>

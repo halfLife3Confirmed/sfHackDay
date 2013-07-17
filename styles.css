@@ -101,7 +101,7 @@ nav {
 		background-position: 5px 5px;
 		float: right;
 	}
-		input[type='text'] {
+		.search input[type='text'] {
 			margin: 0 0 0 30px;
 			background: #fff;
 			width: 300px;
