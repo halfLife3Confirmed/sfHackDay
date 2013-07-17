@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {	margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;font: inherit;vertical-align: baseline;}a {margin: 0;padding: 0;font-size: 100%;	vertical-align: baseline;background: transparent;text-decoration: none;	color:#484848;}a img { border:0 }img { border:0 }article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {	display: block;}body {line-height: 1;font-size: 14pt;}ol, ul {	list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';content: none;}ins {text-decoration: none;}del{text-decoration: line-through;}table{border-collapse: collapse;border-spacing: 0;} 
+/* Meyer's reset ends here */
+.main {
+	width: 1000px;
+	min-height: 100px;
+	background-color: #efefef;
+	margin: 0 auto;
+}
+header {
+	width: 980px;
+	min-height: 100px;
+	float: left;
+	background-color: #ddd;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+	.topic {
+		width: 700px;
+		height: 40px;
+		background-color: #bbb;
+		margin: 0 10px 10px 0;
+		float: left;
+	}
+	.topicDesc {
+		width: 700px;
+		height: 75px;
+		float: left;
+		background-color: #bbb;
+	}
+	.topicDetailsWrap {
+		width: 270px;
+		min-height: 100px;
+		float: right;
+	}
+		.host, .topicOpenTime, .topicCloseTime {
+			width: 270px;
+			height: 40px;
+		}
+nav {
+	width: 980px;
+	height: 40px;
+	padding: 10px;
+	float: left;
+	background-color: #ddd;
+	margin-bottom: 10px;
+}
+	.add {
+		width: 40px;
+		height: 40px;
+		background-color: #bbb;
+		float: left;
+		margin-right: 10px;
+	}
+	.filter {
+		width: 80px;
+		height: 40px;
+		background-color: #bbb;
+		float: left;
+	}
+	.search {
+		width: 350px;
+		height: 40px;
+		background-color: #bbb;
+		float: right;
+	}
+section	 {
+	width: 980px;
+	min-height: 100px;
+	float: left;
+	padding: 10px;
+	background-color: #ddd;
+}
+	.idea {
+		width: 980px;
+		height: 150px;
+		background-color: #bbb;
+		margin-bottom: 20px;
+	}
+		.voteWrap {
+			width: 75px;
+			height: 150px;
+			float: left;
+			background-color: #eee;
+			margin-right: 10px;
+		}
+			.upvote {
+				width: 75px;
+				height: 50px;
+				background:	url('upvote.png');
+			}
+			.upvoted {
+				background: url('upvote_active.png');
+			}
+			.voteCount {
+				width: 75px;
+				height: 60px;
+				text-align: center;
+				padding-top: 40px;
+			}
+		.ideaTitle {
+			width: 700px;
+			height: 35px;
+			float: left;
+			margin:0 10px 10px 0;
+			background-color: #eee;
+		}
+		.timestamp {
+			width: 185px;
+			height: 35px;
+			float: left;
+			text-align: right;
+			background-color: #eee;
+		}
+		.ideaDesc {
+			width: 895px;
+			height: 60px;
+			float: left;
+			background-color: #eee;
+			margin-bottom: 10px;
+		}
+		.ideaAuthor {
+			width: 400px;
+			height: 25px;
+			float: left;
+			background-color: #eee;
+		}
+		.ideaComments {
+			width: 200px;
+			height: 25px;
+			float: right;
+			text-align: right;
+			background-color: #eee;
+		}
