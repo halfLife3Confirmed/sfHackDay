@@ -84,15 +84,14 @@ nav {
 	height: 25px;
 	padding: 10px 10px 15px 10px;
 	float: left;
-	background-color: #ddd;
-	margin-bottom: 10px;
 }
 	.add {
-		width: 25px;
+		min-width: 25px;
 		height: 30px;
 		float: left;
 		margin-right: 10px;
 		color: #fff;
+		border: thin solid #18639b;
 	}
 		.add:hover {
 			cursor: pointer;
@@ -136,8 +135,8 @@ section	 {
 	min-height: 100px;
 	float: left;
 	padding: 10px;
-	background-color: #ddd;
 	opacity: 0;
+	margin: 0;
 }
 /* ------------------------------ */
 /*     INDIVID IDEA STYLING       */
@@ -242,17 +241,19 @@ h1, h2, h3, h4, p, b, a {
 }
 header h1 {
 	font-size: 16pt;
+	color:#626262;
 }
 header h2 {
 	font-size: 11pt;
+	color:#626262;
 }
 .topic h1 {
 	padding-top: 9px;
 	font-size: 20pt;
 }
 .add p {
-	font-size: 20pt;
-	padding: 3px 0 0 5px;
+	font-size: 12pt;
+	padding: 7px 5px 0 5px;
 }
 .filter p {
 	font-size: 12pt;
