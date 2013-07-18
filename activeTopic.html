@@ -97,10 +97,10 @@ $(document).ready(function() {
 	$('.upvote').click(function() {
 		$(this).toggleClass('upvoted');
 		if ($(this).hasClass('upvoted')) {
-			$('.voteCount p').eq($(this).index()).html(parseInt($('.voteCount p').html(), 10)+1);
+			$(this).next().html('<p>'+(parseInt($('.voteCount p').html(), 10)+1)+'</p>');
 		}
 		else {
-			$('.voteCount p').eq($(this).index()).html(parseInt($('.voteCount p').html(), 10)-1);
+			$(this).next().html('<p>'+(parseInt($('.voteCount p').html(), 10)+1)+'</p>');
 		}
 	});
 	$('section').animate({
