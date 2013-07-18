@@ -13,6 +13,9 @@
 <body class='main'>
 <div class='banner'>
 	<div class='bannerWrap'>
+		<!-- ERB CODE
+		<%= image_tag "icon.png" %>
+		-->
 		<img src='sfLogo.png' />
 		<h1>Ideation Manager</h1>
 		<h2>Hello, Peter!</h2>
@@ -24,6 +27,13 @@
 </header>
 <section>
 <div class='newIdea'>
+	<!-- ERB CODE
+	<%= form_for :idea, url: ideas_path do |idea_form| %>
+		<%= idea_form.text_field(:title, placeholder: "Title") %><br />
+		<%= idea_form.text_area(:description, placeholder: "Enter your description here") %><br />
+		<%= idea_form.submit(value: "Submit") %>
+	<% end %>
+	-->
 	<form>
 		<input type='text' placeholder='Title' name='newTitle'><br>
 		<textarea name='newDesc' placeholder='Enter your description here'></textarea><br>
