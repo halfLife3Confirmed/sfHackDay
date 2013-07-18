@@ -55,7 +55,7 @@ header {
 	.topic {
 		width: 675px;
 		height: 40px;
-		margin: 10px 10px 10px 10px;
+		margin: 10px;
 		float: left;
 	}
 	.topicDesc {

@@ -13,8 +13,8 @@
 <body class='main'>
 <div class='banner'>
 	<div class='bannerWrap'>
-		<img src='icon.png' />
-		<h1>State Farm Ideation Manager</h1>
+		<img src='sfLogo.png' />
+		<h1>Ideation Manager</h1>
 		<h2>Hello, Peter!</h2>
 	</div>
 </div>
@@ -38,9 +38,11 @@ $(document).ready(function() {
 	$('.upvote').click(function() {
 		$(this).toggleClass('upvoted');
 	});
-	$('filter').click(function() {
-
-	});
+	$('section').animate({
+	    opacity: 1
+	}, 1000, function() {
+	    // Animation complete. 
+  	});
 });
 </script>
 </body>
