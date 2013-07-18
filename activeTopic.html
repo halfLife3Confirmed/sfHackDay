@@ -75,8 +75,22 @@
 		<div class='timestamp'><h2>Today, 10:07 AM</h2></div>
 		<div class='ideaDesc'><p>Idea description and a few preview lines of what users submit will go here. Limit the character limit to fit within a few lines. Just want to use this for rapid idea submission. Bitters velit Marfa Banksy, sunt dreamcatcher authentic narwhal. Direct trade Williamsburg ennui, craft beer tofu Vice nisi in Carles nesciunt. Williamsburg letterpress locavore id fingerstache. Chambray aliqua Portland viral, ea deep v minim squid typewriter kitsch fugiat. Sartorial 90's veniam fugiat fashion axe. Williamsburg odio magna mollit quis Bushwick, keytar kale chips 3 wolf moon cray culpa occupy eu. Tofu tousled mixtape authentic next level, Godard tumblr aesthetic blue bottle excepteur accusamus magna helvetica you probably haven't heard of them.</p></div>
 		<div class='ideaAuthor'><img src='patrick.JPG' /><h3>Submitted by Patrick Hayes</h3></div>
-		<div class='ideaComments'><h3><a href='#'>Add a comment</a> | <a href='#'>3 comments</a></h3></div>
+		<div class='ideaComments'><h3><a href='#'>Add a comment</a> | <a href='#' class='showComments'>3 comments</a></h3></div>
 	</div>
+	<!-- Comments on the first idea -->
+	<div class='comment'>
+		<p>Great idea! I really like the direction that this is headed. Wayfarers freegan odio, Odd Future bitters Wes Anderson ethnic vero twee kogi. Occupy whatever pickled, literally pitchfork fugiat leggings Wes Anderson butcher sunt cillum Banksy bespoke velit. Pariatur next level forage odio squid, exercitation brunch pitchfork kale chips organic beard. Non scenester mollit, fanny pack Wes Anderson sint aliqua you probably haven't heard of them ut trust fund four loko.</p>
+		<div class='commentAuthor'><h3>Submitted by Matt Donovan</h3></div>
+	</div>
+	<div class='comment'>
+		<p>Great idea! I really like the direction that this is headed. Wayfarers freegan odio, Odd Future bitters Wes Anderson ethnic vero twee kogi. Occupy whatever pickled, literally pitchfork fugiat leggings Wes Anderson butcher sunt cillum Banksy bespoke velit. Pariatur next level forage odio squid, exercitation brunch pitchfork kale chips organic beard. Non scenester mollit, fanny pack Wes Anderson sint aliqua you probably haven't heard of them ut trust fund four loko.</p>
+		<div class='commentAuthor'><h3>Submitted by Michael Harris</h3></div>
+	</div>
+	<div class='comment'>
+		<p>Great idea! I really like the direction that this is headed. Wayfarers freegan odio, Odd Future bitters Wes Anderson ethnic vero twee kogi. Occupy whatever pickled, literally pitchfork fugiat leggings Wes Anderson butcher sunt cillum Banksy bespoke velit. Pariatur next level forage odio squid, exercitation brunch pitchfork kale chips organic beard. Non scenester mollit, fanny pack Wes Anderson sint aliqua you probably haven't heard of them ut trust fund four loko.</p>
+		<div class='commentAuthor'><h3>Submitted by Nick Nichols</h3></div>
+	</div>
+	<!-- end comments section -->
 
 	<div class='idea'>
 		<div class='voteWrap'>
@@ -109,6 +123,9 @@ $(document).ready(function() {
 	}, 1000, function() {
 	    // Animation complete. 
   	});
+	$('.showComments').click(function() {
+		$('.comment').toggleClass('show');
+	});
 });
 </script>
 </body>

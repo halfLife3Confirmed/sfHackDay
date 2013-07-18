@@ -144,9 +144,10 @@ section	 {
 .idea {
 	width: 980px;
 	min-height: 150px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	border: thin solid #bababa;
 	border-top: thick solid #d2111f;
+	float: left;
 }
 	.voteWrap {
 		width: 75px;
@@ -199,7 +200,7 @@ section	 {
 		float: left;
 		margin-bottom: 10px;
 	}
-	.ideaAuthor {
+	.ideaAuthor, .commentAuthor {
 		width: 215px;
 		height: 25px;
 		float: left;
@@ -218,7 +219,18 @@ section	 {
 /* ------------------------------ */
 /*            COMMENTS            */
 /* ------------------------------ */
-
+.comment {
+	width: 900px;
+	min-height: 50px;
+	float: right;
+	margin-bottom: 5px;
+	border: thin solid #bababa;
+	border-top: thick solid #d2111f;
+	display: none;
+}
+	.show {
+		display: inline;
+	}
 /* ------------------------------ */
 /*          NEWTOPIC PAGE         */
 /* ------------------------------ */
@@ -314,6 +326,15 @@ select {
 .voteCount p {
 	font-size: 18pt;
 }
+.comment p {
+	font-size: 9pt;
+	padding: 5px;
+	line-height: 1.2em;
+}
+.comment h3 {
+	font-size: 11pt;
+	padding:0 0 0 5px;
+}
 .newIdea input[type='text'] {
 	font-size: 16pt;
 }
@@ -372,7 +393,7 @@ header {
 	text-shadow: 1px 1px 2px #000000;
     filter: dropshadow(color=#000000, offx=1, offy=1);
 }
-.idea, .topicDetailsWrap {
+.idea, .topicDetailsWrap, .comment {
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #e8e8e8 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
