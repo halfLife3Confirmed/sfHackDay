@@ -25,6 +25,14 @@ dark red: #9e0512
 	background-color: #efefef;
 	margin: 0 auto;
 }
+.headerSpan {
+	width: 100%;
+	min-height:100px;
+	background: #fff;
+	position: relative;
+	z-index: -999;
+	margin-left: 
+}
 .banner {
 	width: 100%;
 	height: 25px;
@@ -48,7 +56,6 @@ header {
 	width: 980px;
 	min-height: 100px;
 	float: left;
-	background-color: #eee;
 	padding: 0 10px 10px 10px;
 	margin:29px 0 10px 0;
 }
@@ -284,6 +291,9 @@ select {
 	padding: 3px 10px 0 0;
 }
 .idea p {
+	font-size: 10pt;
+}
+.timestamp h2 {
 	font-size: 10pt;
 }
 .voteCount p {
