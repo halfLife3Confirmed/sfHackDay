@@ -25,14 +25,6 @@ dark red: #9e0512
 	background-color: #efefef;
 	margin: 0 auto;
 }
-.headerSpan {
-	width: 100%;
-	min-height:100px;
-	background: #fff;
-	position: relative;
-	z-index: -999;
-	margin-left: 
-}
 .banner {
 	width: 100%;
 	height: 25px;
@@ -40,7 +32,6 @@ dark red: #9e0512
 	top: 0;
 	left: 0;
 	padding:2px 0 2px 0;
-	background-color: #fff;
 	color: #fff;
 	z-index: 999;
 }
@@ -58,6 +49,8 @@ header {
 	float: left;
 	padding: 0 10px 10px 10px;
 	margin:29px 0 10px 0;
+	background-image: url('headerBG.png');
+	background-repeat:repeat-x;
 }
 	.topic {
 		width: 675px;
