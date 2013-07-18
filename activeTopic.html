@@ -96,11 +96,12 @@
 $(document).ready(function() {
 	$('.upvote').click(function() {
 		$(this).toggleClass('upvoted');
+		console.log($(this).next());
 		if ($(this).hasClass('upvoted')) {
 			$(this).next().html('<p>'+(parseInt($('.voteCount p').html(), 10)+1)+'</p>');
 		}
 		else {
-			$(this).next().html('<p>'+(parseInt($('.voteCount p').html(), 10)+1)+'</p>');
+			$(this).next().html('<p>'+(parseInt($('.voteCount p').html(), 10)-1)+'</p>');
 		}
 	});
 	$('section').animate({
