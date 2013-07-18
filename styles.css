@@ -8,6 +8,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* Meyer's reset ends here */
 
 /* ------------------------------ */
+/*             COLORZ             */
+/*
+light blue: #8bcef4
+dark blue: #18639b
+
+light red: #dd0c1d
+dark red: #9e0512
+/* ------------------------------ */
+/* ------------------------------ */
 /*        BLOCK STYLING           */
 /* ------------------------------ */
 .main {
@@ -78,22 +87,29 @@ nav {
 	.add {
 		width: 25px;
 		height: 30px;
-		background-color: #bbb;
 		float: left;
 		margin-right: 10px;
+		color: #fff;
 	}
+		.add:hover {
+			cursor: pointer;
+		}
 	.filter {
-		width: 170px;
+		min-width: 170px;
 		height: 30px;
-		background-color: #bbb;
 		float: left;
 	}
 		.filter select {
 			width: 100px;
 			height: 25px;
-			margin: 3px 0 0 0;
-			background: transparent;
-			float: right;
+			margin: 3px 0 0 5px;
+			/*background: transparent;
+			float: right;*/
+			border: 1px solid #bbb;
+			color: #626262;
+			font-size: 13px;
+			font-weight: normal;
+			padding: 2px 1px 2px 4px;
 		}
 	.search {
 		width: 350px;
@@ -118,6 +134,7 @@ section	 {
 	float: left;
 	padding: 10px;
 	background-color: #ddd;
+	opacity: 0;
 }
 /* ------------------------------ */
 /*     INDIVID IDEA STYLING       */
@@ -125,14 +142,14 @@ section	 {
 .idea {
 	width: 980px;
 	min-height: 150px;
-	background-color: #eee;
 	margin-bottom: 20px;
+	border: thin solid #bababa;
+	border-top: thick solid #d2111f;
 }
 	.voteWrap {
 		width: 75px;
 		height: 150px;
 		float: left;
-		background-color: #eee;
 		margin-right: 10px;
 	}
 		.upvote {
@@ -163,20 +180,17 @@ section	 {
 		height: 35px;
 		float: left;
 		text-align: right;
-		background-color: #eee;
 	}
 	.ideaDesc {
 		width: 895px;
 		min-height: 60px;
 		float: left;
-		background-color: #eee;
 		margin-bottom: 10px;
 	}
 	.ideaAuthor {
 		width: 215px;
 		height: 25px;
 		float: left;
-		background-color: #eee;
 	}
 		.ideaAuthor img {
 			float: right;
@@ -188,7 +202,6 @@ section	 {
 		height: 25px;
 		float: right;
 		text-align: right;
-		background-color: #eee;
 	}
 /* ------------------------------ */
 /*          NEWTOPIC PAGE         */
@@ -212,14 +225,15 @@ h1, h2, h3, h4, p, b, a {
 	font-family: 'Arial', sans-serif;
 }
 .banner h1 {
-	font-size: 11pt;
-	color: #111;
+	font-size: 10pt;
+	font-style: italic;
+	color: #fff;
 	float: left;
-	padding: 5px 0 0 7px;
+	padding: 7px 0 0 0;
 }
 .banner h2 {
 	float: right;
-	color: #111;
+	color: #fff;
 	font-size: 11pt;
 	padding: 5px 5px 0 0;
 }
@@ -289,7 +303,40 @@ header {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-.newIdea input[type='submit'], .idea {
+.newIdea input[type='submit'] {
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+}
+.banner {
+	background: #dd0c1d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #dd0c1d 0%, #960511 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd0c1d), color-stop(100%,#960511)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dd0c1d 0%,#960511 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dd0c1d 0%,#960511 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dd0c1d 0%,#960511 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dd0c1d 0%,#960511 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0c1d', endColorstr='#960511',GradientType=0 ); /* IE6-9 */
+}
+.add {
+	color: #fff;
+	background: #8bcef4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8bcef4 0%, #18639b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bcef4), color-stop(100%,#18639b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8bcef4 0%,#18639b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8bcef4 0%,#18639b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8bcef4 0%,#18639b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #8bcef4 0%,#18639b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bcef4', endColorstr='#18639b',GradientType=0 ); /* IE6-9 */
+	text-shadow: 1px 1px 2px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+.idea {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e8e8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e8e8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e8e8e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e8e8e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
 }

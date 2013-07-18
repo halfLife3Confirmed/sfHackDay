@@ -10,8 +10,8 @@
 <body class='main'>
 <div class='banner'>
 	<div class='bannerWrap'>
-		<img src='icon.png' />
-		<h1>State Farm Ideation Manager</h1>
+		<img src='sfLogo.png' />
+		<h1>Ideation Manager</h1>
 		<img width='25' height='25' src='peter.JPG' style='float:right' />
 		<h2>Hello, Peter!</h2>
 	</div>
@@ -46,7 +46,7 @@
 	<div class='idea'>
 		<div class='voteWrap'>
 			<div class='upvote'></div>
-			<div class='voteCount'><p>10</p></div>
+			<div class='voteCount'><p>0</p></div>
 		</div>
 		<div class='ideaName'><h1>Idea title goes here</h1></div>
 		<div class='timestamp'><h2>Today, 10:07 AM</h2></div>
@@ -59,9 +59,19 @@
 <script>
 $(document).ready(function() {
 	$('.upvote').click(function() {
-		console.log('idea upvoted');
 		$(this).toggleClass('upvoted');
+		if ($(this).hasClass('upvoted')) {
+			$('.voteCount p').html(parseInt($('.voteCount p').html(), 10)+1);
+		}
+		else {
+			$('.voteCount p').html(parseInt($('.voteCount p').html(), 10)-1);
+		}
 	});
+	$('section').animate({
+	    opacity: 1
+	}, 1000, function() {
+	    // Animation complete. 
+  	});
 });
 </script>
 </body>
